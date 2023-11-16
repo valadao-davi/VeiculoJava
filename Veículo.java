@@ -1,4 +1,4 @@
-public class Veículo {
+public abstract class Veículo {
 
     String placa = "";
     String marca = "";
@@ -8,6 +8,8 @@ public class Veículo {
     int qtdRodas = 0;
     Motor motor;
 
+
+    public abstract float calcVel(float velocMax);
 
     public Veículo(String placa, String marca, String modelo, String cor, float velocMax, int qtdRodas, Motor motor) {
         this.placa = placa;
